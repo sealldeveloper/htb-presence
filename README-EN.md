@@ -44,11 +44,19 @@ Translations exist for both English (`EN`) and Spanish (`ES`), the default langu
 
 
 ## Service Creation and Startup Execution
-In order to work, `htb-presence.py` needs to be executed manually. Furthermore, Discord needs to be installed and running at all times. To solve this tedious task and error-prone, a setup script `setup.sh` is available, which needs to be executed with `sudo bash setup.sh`.
+In order to work, `htb-presence.py` needs to be executed manually. Furthermore, Discord needs to be installed and running at all times. To solve this tedious and error-prone task, setup scripts have been made available for both Windows and Linux.
+
+If you don't have Discord installed, please refer to the internet.
+
+### Linux
+A setup script `setup.sh` is available, which needs to be executed with `sudo bash setup.sh`.
 
 The script will copy the executable `htb-presence.py` to the directory `/usr/local/bin/` and will create two service configuration files, `/etc/systemd/system/discord.service` and `/etc/systemd/system/htb-presence.service`. Then, it will start those services and enable them so they will be executed when the machine is started and won't be necessary to repeat the process manually.
 
-If you don't have Discord installed, please refer to Google.
+### Windows
+Similar to Linux, a `setup.bat` is available, which can be executed by using `setup.bat` or by double-clicking the file in the File Explorer.
+
+The script will make a new `htb-presence-startup.bat` in the users Startup folder that will execute the `htb-presence.py` file in a new CMD window. Currently the window will stay open and the program will auto-reboot if it crashes. The window is visible so the user can close it if needed.
 
 
 ## Bugs and errors
