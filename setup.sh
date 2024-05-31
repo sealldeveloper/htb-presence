@@ -4,8 +4,7 @@
 ## Author: @wh0crypt
 
 # Copy htb-presence.py to /usr/local/bin/
-sudo mkdir /usr/local/bin/htb-presence/
-sudo mkdir /usr/local/bin/htb-presence/translations/
+sudo mkdir -p /usr/local/bin/htb-presence/translations/
 sudo cp ./htb-presence.py /usr/local/bin/htb-presence/
 sudo cp ./.env /usr/local/bin/htb-presence/
 sudo cp ./translations/en.py /usr/local/bin/htb-presence/translations/
