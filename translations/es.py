@@ -16,6 +16,9 @@ url1_str = 'https://github.com/Pirrandi'
 label2_str = 'Contribuyendo a este RP ⚒️'
 url2_str = 'https://github.com/wh0crypt'
 
+# Buttons
+play_str = 'Machine Info'
+
 # RP
 connected_htb_str = 'Conectado a HackTheBox'
 waiting_state_str = 'Estado: Esperando'
